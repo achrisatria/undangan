@@ -1,0 +1,22 @@
+DATA UNDANGAN TELAH DIISI
+
+Nama:
+- FACHRI MUHAMMAD
+- SYAHRIFAH
+
+Tanggal: Jumat, 18 Desember 2026
+Lokasi: Jl. Jend. D.I Panjaitan No.162, Sei Sikambing D,
+Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111
+
+Rekening:
+- BANK JAGO — 108660635737 — Fachri Muhammad
+- BANK MANDIRI — 1060022693462 — SYAHRIFAH
+
+CATATAN:
+1. Jam akad belum diberikan, jadi ditampilkan sebagai "Waktu akad akan diinformasikan".
+2. Musik tidak disertakan. Jika ingin musik, letakkan file MP3 yang legal digunakan di:
+   template/assets/music.mp3
+3. Foto saat ini masih berupa gambar placeholder SVG. Ganti file couple.svg,
+   bride.svg, dan groom.svg di folder assets dengan foto yang sesuai (nama file tetap sama).
+4. Untuk deploy ke Netlify, upload isi folder template (index.html, config.js,
+   assets/) atau ZIP ini melalui Netlify Deploy.

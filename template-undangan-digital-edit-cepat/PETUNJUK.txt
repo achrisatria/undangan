@@ -1,0 +1,44 @@
+TEMPLATE UNDANGAN DIGITAL — EDIT CEPAT
+
+CARA PALING MUDAH:
+1. Buka config.js dan ubah data pelanggan di satu tempat.
+2. Ganti 3 foto di folder assets:
+   - couple.jpg = foto pasangan untuk cover dan foto utama
+   - bride.jpg = foto mempelai wanita
+   - groom.jpg = foto mempelai pria
+   Hapus/abaikan file SVG contoh setelah JPG disiapkan. Nama file JPG harus persis seperti di atas.
+3. Masukkan musik berizin/yang Anda miliki ke assets/music.mp3.
+4. Upload seluruh isi folder template ini ke Netlify.
+
+DATA YANG DIEDIT:
+- Nama mempelai pria/wanita dan nama lengkap
+- Nama orang tua (opsional)
+- Tanggal, hari, jam, alamat, link Google Maps
+- Jenis undangan dan teks penjelasan akad tanpa resepsi
+- Nama bank, nomor rekening, nama pemilik rekening
+- Tanggal countdown pada eventDateISO
+
+PENTING:
+- Ubah config.js saja untuk teks dan rekening; tidak perlu mengubah index.html.
+- Untuk rekening yang tidak digunakan, hapus objek rekening tersebut dari array bankAccounts.
+- Jangan unggah nomor rekening sebelum pemilik rekening memberi izin dan periksa ulang digitnya.
+- Musik tidak disertakan. Gunakan MP3 yang Anda punya hak/izin untuk digunakan. Musik baru diputar setelah penerima menekan tombol pembuka karena browser membatasi autoplay.
+- Semua gambar SVG adalah placeholder. Untuk menggantinya, gunakan file JPG dengan nama yang ditentukan.
+- Teks alamat dibuat dari addressLines. Isi satu baris per bagian alamat.
+- Nama tamu personal: tambahkan ?to=Nama%20Tamu di akhir link website.
+
+CONTOH:
+https://nama-website.netlify.app/?to=Ibu%20Sari
+
+PUBLISH KE NETLIFY:
+1. Ekstrak ZIP.
+2. Buka https://app.netlify.com/drop dan login.
+3. Upload folder hasil ekstrak / seluruh isinya sesuai instruksi Netlify.
+4. Setelah deploy selesai, salin link .netlify.app.
+
+FILE:
+- index.html = struktur halaman (jarang perlu diedit)
+- config.js = seluruh data undangan
+- assets/style.css = desain dan warna
+- assets/script.js = countdown, musik, tombol salin rekening
+- assets/ = foto dan musik

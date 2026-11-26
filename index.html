@@ -1,133 +1,159 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#2c211b">
-<meta name="description" content="Pemberitahuan pernikahan Fachri Muhammad dan Syahrifah, 18 Desember 2026.">
-<title>Fachri & Syahrifah — Wedding Announcement</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#302820">
+<title>Undangan Pernikahan Elegan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+:root{--ivory:#f7f3eb;--paper:#fffdf8;--ink:#332d25;--muted:#827665;--gold:#b79a69;--green:#3e493c;--line:#e5dac8}
+body{background:var(--ivory);color:var(--ink)}
+.navigation{background:#fbf8f1f2;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.monogram{font-size:25px;letter-spacing:1px}
+.section{padding-top:100px;padding-bottom:100px}
+.hero{padding-top:100px;max-width:900px}
+.hero .eyebrow{font-size:10px;letter-spacing:4px;color:#9a8058}
+.intro{font-size:18px;max-width:560px;color:#766b5c;margin:28px auto 42px}
+.main-photo{height:clamp(420px,70vw,660px);max-width:620px;border:12px solid var(--paper);outline:1px solid #d9c9ad;box-shadow:0 25px 65px #3a2b1a18;position:relative}
+.main-photo:after{content:"";position:absolute;inset:10px;border:1px solid #ffffff9c;pointer-events:none}
+.names{font-size:clamp(46px,8vw,72px);letter-spacing:-1.4px;color:#514333;margin:38px 0 14px}
+.names em{color:var(--gold);font-style:italic}
+.date-label{letter-spacing:3px;color:#96794f}
+.gold-divider{margin:38px auto 25px;color:var(--gold)}
+.verse{font-size:20px;max-width:540px;color:#746958}
+.verse-ref{letter-spacing:2px;color:#9c835d;margin-top:14px}
+.dark-section{background:linear-gradient(145deg,#343c32,#262d26);color:#f8f1e5}
+.section-kicker{color:#d0b98f;letter-spacing:3px}
+.section-kicker span{color:#e1c99d}
+.section h2{font-size:clamp(37px,6vw,54px);line-height:1.22;letter-spacing:-.7px}
+.section h2 i{color:#d0b58a}
+.people{max-width:760px;gap:25px;margin-top:55px}
+.portrait{height:clamp(260px,42vw,410px);border:8px solid #4d5749;outline:1px solid #9d8967;box-shadow:0 16px 40px #0002}
+.person h3{font-size:clamp(21px,3vw,29px);color:#f1dfbd}
+.person p{font-size:10px;line-height:1.9;letter-spacing:1.2px;color:#d2c6b2}
+.and-mark{font-size:42px;color:#d0b58a}
+.announcement{max-width:900px}
+.event-panel{max-width:590px;padding:52px 35px;background:linear-gradient(160deg,#fffdf8,#f3ecdf);border:1px solid #d6c5a5;outline:7px solid #f7f3eb;box-shadow:0 24px 60px #4c392014}
+.event-flower{font-size:38px;color:var(--gold)}
+.event-label{letter-spacing:3px;color:#987b50}
+.event-panel h3{font-size:30px;color:#4b3c2b}
+.event-address{font-size:19px!important;line-height:1.8!important}
+.map-button{background:var(--green);border:1px solid var(--green);color:#fff9ed;padding:15px 22px;letter-spacing:1.5px;transition:.2s}
+.map-button:hover{background:#293329}
+.countdown{gap:clamp(16px,4vw,40px);margin-top:20px}
+.countdown div{min-width:58px;padding:13px 8px;border-top:1px solid #c9b58f;border-bottom:1px solid #c9b58f}
+.countdown b{font-size:35px;color:#665139}
+.countdown span{letter-spacing:1.8px}
+.announcement-note{max-width:620px;border-top:1px solid #d7c7ad;margin-top:55px;padding-top:35px}
+.announcement-note p{font-size:16px;line-height:2;color:#766957}
+.gallery-grid{max-width:790px;gap:16px}
+.gallery-grid figure{border:7px solid #495245;outline:1px solid #9d8967;box-shadow:0 14px 32px #0002}
+.gift{max-width:850px}
+.gift-heart{font-size:44px;color:var(--gold)}
+.gift-intro{font-size:16px;line-height:2;max-width:540px}
+.bank-card{max-width:470px;padding:29px 30px;background:linear-gradient(145deg,#fffdf8,#f0e8d9);border:1px solid #d7c6a7;box-shadow:0 16px 38px #47351c10}
+.bank-heading strong{font-size:15px;letter-spacing:2px;color:#4c493d}
+.bank-heading span{letter-spacing:2px}
+.account-number{font-size:32px;letter-spacing:1.5px;color:#3c3429}
+.account-owner{font-size:12px}
+.copy-button{background:var(--green);padding:13px 19px;letter-spacing:.4px}
+.copy-button:hover{background:#283329}
+.gift-thanks{font-size:18px;color:#8b7450}
+.closing{padding-top:110px;padding-bottom:110px}
+.closing-ornament{font-size:43px;color:#d3b98e}
+.closing>p:not(.eyebrow){font-size:16px;line-height:2;color:#e1d7c8}
+.signature{font-size:42px;color:#e0c99f}
+.closing-greeting{letter-spacing:2px;max-width:540px;margin:auto}
+footer{background:#211f1a;padding:27px;letter-spacing:3px}
+.opening{background:#211d17}
+.opening-photo{filter:blur(1px);transform:scale(1.06)}
+.opening-shade{background:linear-gradient(135deg,#171711c9,#2b241ad9)}
+.opening-content{max-width:470px;min-height:630px;border:1px solid #c8ad7d;background:#1e2119a8;backdrop-filter:blur(5px);box-shadow:0 25px 80px #0005}
+.opening-content:before{inset:12px;border:1px solid #c8ad7d80}
+.smallcaps{letter-spacing:4px;color:#ddc79f}
+.opening h1{font-size:clamp(53px,11vw,72px);line-height:1.08}
+.opening-date{font-size:11px;letter-spacing:5px;color:#e0cda9}
+.open-button{background:#c3a675;border-color:#d3bb91;padding:16px 28px;letter-spacing:1px}
+.opening-note{font-size:14px}
+.music-button{background:#fffaf1}
+@media(max-width:560px){
+ .section{padding:76px 19px}
+ .hero{padding-top:78px}
+ .main-photo{height:440px;border-width:7px}
+ .people{gap:7px;grid-template-columns:1fr 24px 1fr}
+ .portrait{height:245px;border-width:4px}
+ .person h3{font-size:20px;line-height:1.3}
+ .person p{font-size:8px;letter-spacing:.3px}
+ .and-mark{font-size:28px}
+ .event-panel{padding:35px 19px}
+ .countdown{gap:10px}
+ .countdown div{min-width:53px;padding:10px 4px}
+ .countdown b{font-size:27px}
+ .gallery-grid{gap:9px}
+ .gallery-grid figure{border-width:4px}
+ .opening-content{min-height:570px}
+ .opening h1{font-size:53px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+</style>
+
 </head>
 <body>
-<audio id="weddingMusic" loop preload="none"><source src="assets/music.mp3" type="audio/mpeg"></audio>
-
+<audio id="music" loop preload="none"><source src="assets/music.mp3" type="audio/mpeg"></audio>
 <div class="opening" id="opening">
   <div class="opening-photo"></div><div class="opening-shade"></div>
   <div class="opening-content">
-    <div class="smallcaps">THE WEDDING ANNOUNCEMENT</div>
-    <div class="ornament">✦</div>
-    <h1>Fachri <i>&</i><br>Syahrifah</h1>
-    <div class="opening-date">18 · 12 · 2026</div>
-    <div class="to-label">Kepada Yth.</div>
-    <div class="guest-name" id="guestName">Bapak/Ibu/Saudara/i</div>
-    <button class="open-button" id="openButton">Buka Pengumuman <span>↗</span></button>
+    <div class="smallcaps" id="openingTitle">THE WEDDING ANNOUNCEMENT</div><div class="ornament">✦</div>
+    <h1><span id="coverGroom">Nama Pria</span> <i>&</i><br><span id="coverBride">Nama Wanita</span></h1>
+    <div class="opening-date" id="coverDate">18 · 12 · 2026</div>
+    <div class="to-label">Kepada Yth.</div><div class="guest-name" id="guestName">Bapak/Ibu/Saudara/i</div>
+    <button class="open-button" id="openButton">Buka Undangan <span>↗</span></button>
     <p class="opening-note">Dengan penuh rasa syukur, kami berbagi kabar bahagia.</p>
   </div>
 </div>
-
-<header class="navigation">
-  <a class="monogram" href="#home">F<span>&</span>S</a>
-  <button id="musicButton" class="music-button" type="button">♫ <span>Musik</span></button>
-</header>
-
+<header class="navigation"><a class="monogram" href="#home" id="monogram">N<span>&</span>N</a><button id="musicButton" class="music-button">♫ <span>Musik</span></button></header>
 <main id="home">
-  <section class="hero section">
-    <div class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
-    <p class="intro">Dengan memohon rahmat dan ridha Allah SWT, kami ingin membagikan kabar bahagia pernikahan kami.</p>
-    <figure class="main-photo"><img src="assets/couple.jpg" alt="Foto Fachri Muhammad dan Syahrifah"></figure>
-    <div class="names">Fachri <em>&</em> Syahrifah</div>
-    <div class="date-label">JUMAT, 18 DESEMBER 2026</div>
-    <div class="gold-divider"><span>✦</span></div>
-    <p class="verse">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan pasangan-pasangan untukmu...”</p>
-    <p class="verse-ref">QS. Ar-Rum: 21</p>
-  </section>
-
-  <section class="couple section dark-section">
-    <div class="section-kicker"><span>01</span> THE BRIDE & GROOM</div>
-    <h2>Dua hati, satu tujuan,<br><i>satu perjalanan baru.</i></h2>
-    <div class="people">
-      <article class="person">
-        <div class="portrait"><img src="assets/bride.jpg" alt="Foto Syahrifah"></div>
-        <h3>Syahrifah</h3>
-        <p>Mempelai Wanita</p>
-      </article>
-      <div class="and-mark">&</div>
-      <article class="person">
-        <div class="portrait"><img src="assets/groom.jpg" alt="Foto Fachri Muhammad"></div>
-        <h3>Fachri Muhammad</h3>
-        <p>Mempelai Pria</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="announcement section">
-    <div class="section-kicker"><span>02</span> OUR WEDDING DAY</div>
-    <h2>Hari istimewa<br><i>yang kami syukuri.</i></h2>
-    <div class="event-panel">
-      <div class="event-flower">✧</div>
-      <div class="event-label">PROSESI AKAD NIKAH</div>
-      <h3>Jumat, 18 Desember 2026</h3>
-      <p class="event-time">Waktu: <strong>Mohon konfirmasi jam akad</strong></p>
-      <div class="thin-line"></div>
-      <p class="event-address">Jl. Jend. D.I. Panjaitan No. 162,<br>Sei Sikambing D, Kec. Medan Petisah,<br>Kota Medan, Sumatera Utara 20111</p>
-      <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Jl.+Jend.+D.I.+Panjaitan+No.162%2C+Sei+Sikambing+D%2C+Medan+Petisah%2C+Medan%2C+Sumatera+Utara+20111" target="_blank" rel="noopener">BUKA LOKASI DI GOOGLE MAPS ↗</a>
-    </div>
-    <div class="countdown-title">MENUJU HARI BAHAGIA</div>
-    <div class="countdown" id="countdown">
-      <div><b id="days">00</b><span>HARI</span></div><div><b id="hours">00</b><span>JAM</span></div><div><b id="minutes">00</b><span>MENIT</span></div><div><b id="seconds">00</b><span>DETIK</span></div>
-    </div>
-    <div class="announcement-note">
-      <span class="note-flower">❧</span>
-      <p>Prosesi akad nikah akan dilaksanakan secara sederhana dan terbatas bersama keluarga serta kerabat terdekat, tanpa penyelenggaraan resepsi pernikahan.</p>
-      <p>Melalui halaman ini, kami ingin menyampaikan kabar bahagia sekaligus memohon doa restu dari keluarga, sahabat, dan orang-orang terkasih.</p>
-    </div>
-  </section>
-
-  <section class="gallery section dark-section">
-    <div class="section-kicker"><span>03</span> OUR MOMENTS</div>
-    <h2>Sepenggal cerita<br><i>tentang kami.</i></h2>
-    <div class="gallery-grid">
-      <figure class="gallery-large"><img src="assets/couple.jpg" alt="Momen bersama"></figure>
-      <figure><img src="assets/bride.jpg" alt="Potret Syahrifah"></figure>
-      <figure><img src="assets/groom.jpg" alt="Potret Fachri"></figure>
-    </div>
-  </section>
-
-  <section class="gift section">
-    <div class="section-kicker"><span>04</span> WEDDING GIFT</div>
-    <div class="gift-heart">♡</div>
-    <h2>Doa restu Anda<br><i>adalah hadiah terindah.</i></h2>
-    <p class="gift-intro">Apabila berkenan memberikan tanda kasih, dapat disampaikan melalui rekening berikut. Kehadiran doa dan perhatian Anda sangat berarti bagi kami.</p>
-
-    <div class="bank-card">
-      <div class="bank-heading"><strong>BANK JAGO</strong><span>WEDDING GIFT</span></div>
-      <div class="account-number">108660635737</div>
-      <div class="account-owner">a.n. Fachri Muhammad</div>
-      <button class="copy-button" data-account="108660635737">Salin nomor rekening</button>
-    </div>
-    <div class="bank-card">
-      <div class="bank-heading"><strong>BANK MANDIRI</strong><span>WEDDING GIFT</span></div>
-      <div class="account-number">1060022693462</div>
-      <div class="account-owner">a.n. Syahrifah</div>
-      <button class="copy-button" data-account="1060022693462">Salin nomor rekening</button>
-    </div>
-    <p class="gift-thanks" id="giftMessage">Terima kasih atas kasih sayang dan perhatian yang diberikan.</p>
-  </section>
-
-  <section class="closing section dark-section">
-    <div class="closing-ornament">✧</div>
-    <div class="eyebrow">WITH LOVE & GRATITUDE</div>
-    <h2>Semoga doa baik<br><i>menyertai langkah kami.</i></h2>
-    <p>Merupakan kebahagiaan bagi kami menerima doa restu dari Anda. Semoga Allah SWT senantiasa melimpahkan keberkahan untuk kita semua.</p>
-    <div class="signature">Fachri & Syahrifah</div>
-    <div class="closing-greeting">WASSALAMU’ALAIKUM WARAHMATULLAHI WABARAKATUH</div>
-  </section>
-</main>
-<footer>FACHRI & SYAHRIFAH · 18 DESEMBER 2026</footer>
-<div class="toast" id="toast" role="status">Nomor rekening berhasil disalin</div>
-<script src="assets/script.js"></script>
-</body>
-</html>
+<section class="hero section">
+  <div class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
+  <p class="intro">Dengan memohon rahmat dan ridha Allah SWT, kami ingin membagikan kabar bahagia pernikahan kami.</p>
+  <figure class="main-photo"><img src="assets/couple.svg" alt="Foto pasangan"></figure>
+  <div class="names"><span id="heroGroom">Nama Pria</span> <em>&</em> <span id="heroBride">Nama Wanita</span></div>
+  <div class="date-label" id="heroDate">HARI, TANGGAL</div>
+  <div class="gold-divider"><span>✦</span></div>
+  <p class="verse" id="quote">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan pasangan-pasangan untukmu...”</p>
+  <p class="verse-ref" id="quoteReference">QS. Ar-Rum: 21</p>
+</section>
+<section class="couple section dark-section">
+  <div class="section-kicker"><span>01</span> THE BRIDE & GROOM</div><h2>Dua hati, satu tujuan,<br><i>satu perjalanan baru.</i></h2>
+  <div class="people">
+    <article class="person"><div class="portrait"><img src="assets/bride.svg" alt="Foto mempelai wanita"></div><h3 id="brideFullName">Nama Mempelai Wanita</h3><p id="brideParents">Putri dari ...</p></article>
+    <div class="and-mark">&</div>
+    <article class="person"><div class="portrait"><img src="assets/groom.svg" alt="Foto mempelai pria"></div><h3 id="groomFullName">Nama Mempelai Pria</h3><p id="groomParents">Putra dari ...</p></article>
+  </div>
+</section>
+<section class="announcement section">
+  <div class="section-kicker"><span>02</span> OUR WEDDING DAY</div><h2>Hari istimewa<br><i>yang kami syukuri.</i></h2>
+  <div class="event-panel"><div class="event-flower">✧</div><div class="event-label" id="eventType">AKAD NIKAH</div>
+    <h3 id="eventDate">Hari, Tanggal</h3><p class="event-time" id="eventTime">Waktu acara</p><div class="thin-line"></div>
+    <p class="event-address" id="eventAddress">Alamat acara</p><a class="map-button" id="mapsLink" href="#" target="_blank" rel="noopener">BUKA LOKASI DI GOOGLE MAPS ↗</a>
+  </div>
+  <div class="countdown-title">MENUJU HARI BAHAGIA</div>
+  <div class="countdown"><div><b id="days">00</b><span>HARI</span></div><div><b id="hours">00</b><span>JAM</span></div><div><b id="minutes">00</b><span>MENIT</span></div><div><b id="seconds">00</b><span>DETIK</span></div></div>
+  <div class="announcement-note"><span class="note-flower">❧</span><p id="announcementText">Keterangan acara.</p></div>
+</section>
+<section class="gallery section dark-section"><div class="section-kicker"><span>03</span> OUR MOMENTS</div><h2>Sepenggal cerita<br><i>tentang kami.</i></h2>
+  <div class="gallery-grid"><figure class="gallery-large"><img src="assets/couple.svg" alt="Foto pasangan"></figure><figure><img src="assets/bride.svg" alt="Foto mempelai wanita"></figure><figure><img src="assets/groom.svg" alt="Foto mempelai pria"></figure></div>
+</section>
+<section class="gift section"><div class="section-kicker"><span>04</span> WEDDING GIFT</div><div class="gift-heart">♡</div>
+  <h2>Doa restu Anda<br><i>adalah hadiah terindah.</i></h2><p class="gift-intro">Apabila berkenan memberikan tanda kasih, dapat disampaikan melalui rekening berikut. Doa dan perhatian Anda sangat berarti bagi kami.</p>
+  <div id="bankList"></div><p class="gift-thanks">Terima kasih atas kasih sayang dan perhatian yang diberikan.</p>
+</section>
+<section class="closing section dark-section"><div class="closing-ornament">✧</div><div class="eyebrow">WITH LOVE & GRATITUDE</div>
+  <h2>Semoga doa baik<br><i>menyertai langkah kami.</i></h2><p>Merupakan kebahagiaan bagi kami menerima doa restu dari Anda. Semoga Allah SWT senantiasa melimpahkan keberkahan untuk kita semua.</p>
+  <div class="signature" id="signature">Nama Pria & Nama Wanita</div><div class="closing-greeting">WASSALAMU’ALAIKUM WARAHMATULLAHI WABARAKATUH</div>
+</section>
+</main><footer id="footerNames">UNDANGAN DIGITAL</footer><div class="toast" id="toast" role="status"></div>
+<script src="config.js"></script><script src="assets/script.js"></script>
+</body></html>

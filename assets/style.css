@@ -361,3 +361,124 @@ footer{padding:20px;font-size:7px;letter-spacing:2px}
   .opening h1{font-size:clamp(20px,6.8vw,24px)}
   .opening-content{padding-left:18px;padding-right:18px}
 }
+
+
+/* ===== FINAL RESPONSIVE COVER: no clipped names or content ===== */
+.opening,
+.opening *{box-sizing:border-box}
+.opening{
+  padding:clamp(12px,3vw,28px);
+  min-height:100vh;
+  min-height:100svh;
+  display:grid;
+  place-items:center;
+  overflow-y:auto;
+}
+.opening-content{
+  width:min(100%,390px);
+  height:auto;
+  min-height:0;
+  max-height:calc(100svh - 32px);
+  padding:clamp(25px,5.5vh,48px) clamp(19px,5vw,30px) clamp(23px,4.5vh,36px);
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:none;
+}
+.opening-content::-webkit-scrollbar{display:none}
+.opening-content:before{inset:9px;pointer-events:none}
+.opening-content > *{flex:0 0 auto;max-width:100%;position:relative;z-index:1}
+.opening .smallcaps{
+  width:100%;
+  font-size:clamp(6px,1.7vw,8px);
+  line-height:1.7;
+  letter-spacing:clamp(1.7px,.55vw,3px);
+  overflow-wrap:anywhere;
+}
+.opening .ornament{font-size:20px;line-height:1;margin:clamp(12px,2.4vh,20px) 0 clamp(13px,2.5vh,20px)}
+.opening h1{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  max-width:100%;
+  margin:0;
+  padding:0;
+  font-family:"Playfair Display",serif;
+  font-size:clamp(25px,7.8vw,43px);
+  font-weight:400;
+  line-height:1.12;
+  letter-spacing:-.025em;
+  text-align:center;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+.opening h1 span{
+  display:block;
+  width:100%;
+  max-width:100%;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  word-break:normal;
+  line-height:1.13;
+}
+.opening h1 i{
+  display:block;
+  margin:7px 0 9px;
+  font-size:.48em;
+  line-height:1;
+  font-style:italic;
+}
+.opening .opening-date{
+  width:100%;
+  margin:clamp(14px,2.7vh,22px) 0 clamp(16px,3vh,24px);
+  font-size:clamp(8px,2vw,10px);
+  line-height:1.6;
+  letter-spacing:clamp(2px,.7vw,4px);
+  overflow-wrap:anywhere;
+}
+.opening .to-label{margin:0;font-size:9px;line-height:1.7}
+.opening .guest-name{margin:2px 0 0;font-size:11px;line-height:1.7;overflow-wrap:anywhere}
+.opening .open-button{
+  min-width:0;
+  width:min(100%,174px);
+  min-height:42px;
+  margin:clamp(15px,2.7vh,22px) 0 11px;
+  padding:12px 15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  white-space:normal;
+  line-height:1.4;
+}
+.opening .opening-note{
+  width:100%;
+  max-width:260px;
+  margin:0 auto;
+  font-size:clamp(10px,2.8vw,12px);
+  line-height:1.65;
+  overflow-wrap:anywhere;
+}
+@media(max-width:380px){
+  .opening-content{width:min(100%,340px);padding-left:18px;padding-right:18px}
+  .opening h1{font-size:clamp(24px,7.5vw,31px);letter-spacing:-.03em}
+  .opening h1 span{line-height:1.16}
+}
+@media(max-height:680px){
+  .opening-content{padding-top:19px;padding-bottom:18px}
+  .opening .ornament{margin:9px 0 10px}
+  .opening .opening-date{margin:10px 0 13px}
+  .opening .open-button{margin-top:11px;margin-bottom:8px;min-height:38px}
+  .opening h1{font-size:clamp(23px,6.5vw,35px)}
+}
+@media(min-width:700px){
+  .opening-content{width:min(100%,430px);padding:46px 34px 36px}
+  .opening h1{font-size:clamp(36px,4.2vw,48px)}
+}

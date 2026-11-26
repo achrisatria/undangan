@@ -9,7 +9,7 @@ set("brideParents",d.brideParents);set("groomParents",d.groomParents);
 set("eventType",(d.eventType||"Akad Nikah").toUpperCase());set("eventDate",d.eventDay+", "+d.eventDate);
 set("eventTime",d.eventTime);set("eventAddress",(d.addressLines||[]).join("\\n"));
 set("announcementText",d.announcementText);set("quote","“"+d.quote+"”");set("quoteReference",d.quoteReference);
-set("signature",d.groomName+" & "+d.brideName);set("footerNames",(d.groomName+" & "+d.brideName+" · "+d.eventDate).toUpperCase());
+document.getElementById("signature").innerHTML = '<span class="signature-name">FACHRI</span><span class="signature-ampersand">&</span><span class="signature-name">'+d.brideName+'</span>';set("footerNames",(d.groomName+" & "+d.brideName+" · "+d.eventDate).toUpperCase());
 set("monogram",(d.groomName||"N").charAt(0).toUpperCase()+"&"+(d.brideName||"N").charAt(0).toUpperCase());
 $("mapsLink").href=d.mapsUrl||"#";
 $("eventAddress").innerHTML=(d.addressLines||[]).map(x=>escapeHtml(x)).join("<br>");
